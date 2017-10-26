@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>前台向后台传递值</title>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script>
+      $(function(){
+            $.ajax({
+                url:"http://localhost:3000/public/index",
+                type:"POST",
+                data:{
+//                    abc:"1" ,
+                    nm:$('#txt1').val(),
+                    nr:$('#txt2').val()
+                },
+                success:function(e){
+                    $("#btn").click(function(){
+                        $('.box').append('<div>'+ e.name+'</div>')
+                    });
+                }
+            })
+        })
+
+
+
+
+
+    </script>
+</head>
+<body>
+<h1>Skier Dictionnary</h1>
+<div class="box">
+    <h2>内容：</h2>
+</div>
+ <div class="box1">
+     <input id="txt1" type="text" placeholder="名字">
+     <input id="txt2"  type="text" placeholder="内容">
+     <input id="btn" type="button" value="上传">
+ </div>
+</body>
+</html>

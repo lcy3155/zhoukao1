@@ -1,0 +1,48 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  text-decoration: none;
+}
+h1{
+ text-align: center;
+  line-height: 50px;
+}
+.box{
+  width: 1000px;
+  padding: 25px;
+  box-sizing: border-box;
+ border: 1px solid #111;
+  margin: 0 auto;
+}
+.box1{
+  width: 1000px;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 1px solid #111;
+  margin: 50px auto 0;
+  background: #6e6e6e;
+}
+
+#txt1,#txt2{
+    height: 30px;
+  padding-left: 20px;
+  margin-right: 25px;
+  outline: none;
+}
+#txt1{
+  width: 200px;
+}
+#txt2{
+  width: 500px;
+}
+#btn{
+  width: 100px;
+  height: 30px;
+  background: #007AFF;
+  color: #fff;
+}
